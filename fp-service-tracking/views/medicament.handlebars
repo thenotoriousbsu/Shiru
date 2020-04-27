@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <th style="border: 1px solid #000;">name</th>
+    <th style="border: 1px solid #000;">name of protein</th>
+    <th style="border: 1px solid #000;">time after first use</th>
+    <th style="border: 1px solid #000;">person status</th>
+    <th style="border: 1px solid #000;">id</th>
+  </thead>
+  <tbody>
+    {{#each medicament}}
+      <tr>
+        <td style="border: 1px solid #000;">{{name}}</td>
+        <td style="border: 1px solid #000;">{{protein}}</td>
+        <td style="border: 1px solid #000;">{{days}} days {{hours}}:{{minutes}}:{{seconds}}</td>
+        {{#if status}}<td style="border: 1px solid #000;background:green;">good</td>{{else}}<td style="border: 1px solid #000;background:red;">bad</td>{{/if}}
+        <td style="border: 1px solid #000;">{{id}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
